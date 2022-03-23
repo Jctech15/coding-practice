@@ -55,7 +55,7 @@ console.log(createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]));
 //"(123) 456-7890" */
 
 //kyu 6 find the odd int
-function findOdd(A) {
+/* function findOdd(A) {
   let counter = {};
   A.forEach((num) => {
     // if (!counter[num]) {
@@ -63,7 +63,7 @@ function findOdd(A) {
     // } else {
     //   counter[num]++;
     // }
-    !counter[num] ? (counter[num] = 1) : counter[num]++;
+    counter[num] ?  counter[num]++ : (counter[num] = 1);
   });
   console.log(counter);
 
@@ -75,7 +75,7 @@ function findOdd(A) {
 }
 
 let a = [20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5];
-findOdd(a); //4
+findOdd(a); */ //4
 
 //kyu 7 Highest and Lowest
 /* function highAndLow(numbers) {
@@ -84,3 +84,26 @@ findOdd(a); //4
   console.log(`${Math.max(...numbers)} ${Math.min(...numbers)}`);
 }
 highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"); */
+
+//kyu 7 descending orer
+
+/* function descendingOrder(n) {
+  return Number(n.toString().split("").reverse().join(""));
+}
+descendingOrder(42145); */
+
+//kyu 6 Stop gninnipS My sdroW!
+function spinWords(string) {
+  string = string.split(" ");
+  let newString = [];
+  string.forEach((str) => {
+    if (str.length < 5) {
+      newString.push(str);
+    } else {
+      newString.push(str.split("").reverse().join(""));
+    }
+  });
+  console.log(newString.join(" "));
+}
+
+spinWords("Hey fellow Warriors");

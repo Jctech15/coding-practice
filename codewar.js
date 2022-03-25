@@ -93,7 +93,7 @@ highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"); */
 descendingOrder(42145); */
 
 //kyu 6 Stop gninnipS My sdroW!
-function spinWords(string) {
+/* function spinWords(string) {
   string = string.split(" ");
   let newString = [];
   string.forEach((str) => {
@@ -107,3 +107,18 @@ function spinWords(string) {
 }
 
 spinWords("Hey fellow Warriors");
+ */
+
+//kyu 7 Get the Middle Character
+function getMiddle(s) {
+  if (s.length % 2 === 0) {
+    return s.substring(
+      Math.floor(s.length / 2 - 1),
+      Math.ceil(s.length / 2 + 1)
+    );
+  } else {
+    return s.charAt(Math.floor(s.length / 2));
+  }
+}
+
+console.log(getMiddle("midoo"));

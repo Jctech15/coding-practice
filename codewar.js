@@ -110,15 +110,31 @@ spinWords("Hey fellow Warriors");
  */
 
 //kyu 7 Get the Middle Character
-function getMiddle(s) {
-  if (s.length % 2 === 0) {
-    return s.substring(
-      Math.floor(s.length / 2 - 1),
-      Math.ceil(s.length / 2 + 1)
-    );
-  } else {
-    return s.charAt(Math.floor(s.length / 2));
-  }
+/* function getMiddle(s) {
+  // if (s.length % 2 === 0) {
+  //   return s.substring(
+  //     Math.floor(s.length / 2 - 1),
+  //     Math.ceil(s.length / 2 + 1)
+  //   );
+  // } else {
+  //   return s.charAt(Math.floor(s.length / 2));
+  // }
+  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
 }
 
 console.log(getMiddle("midoo"));
+ */
+
+//kyu 7 you're a squre
+/* let isSquare = function (n) {
+  let root = Math.sqrt(n);
+  // if (n === root * root) {
+  //   return true;
+  // } else {
+  //   return false;
+
+  return Number.isInteger(root);
+};
+
+console.log(isSquare(5));
+ */

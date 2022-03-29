@@ -138,3 +138,12 @@ console.log(getMiddle("midoo"));
 
 console.log(isSquare(5));
  */
+
+//kyu 7 Isograms
+
+/* function isIsogram(str) {
+  str = str.toLowerCase();
+  return (
+    str.split("").filter((e, i) => str.indexOf(e) == i).length == str.length
+  );
+} */

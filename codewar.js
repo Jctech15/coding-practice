@@ -147,3 +147,9 @@ console.log(isSquare(5));
     str.split("").filter((e, i) => str.indexOf(e) == i).length == str.length
   );
 } */
+
+//kyu 7 List Filtering
+
+function filter_list(l) {
+  return l.filter((e) => Number.isInteger(e));
+}

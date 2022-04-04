@@ -150,6 +150,40 @@ console.log(isSquare(5));
 
 //kyu 7 List Filtering
 
-function filter_list(l) {
+/* function filter_list(l) {
   return l.filter((e) => Number.isInteger(e));
 }
+ */
+
+// kyu 6 Multiples of 3 or 5
+
+/* function solution(number) {
+  let multiples = [];
+  for (let i = 1; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      multiples.push(i);
+    } else if (i % 3 === 0) {
+      multiples.push(i);
+    } else if (i % 5 === 0) {
+      multiples.push(i);
+    }
+  }
+
+  return multiples.reduce((result, current) => {
+    return result + current;
+  }, 0);
+}
+
+solution(10); */
+
+function solution(number) {
+  let sum = 0;
+  for (let i = 1; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+      sum += i;
+    }
+  }
+  console.log(sum);
+}
+
+solution(10);

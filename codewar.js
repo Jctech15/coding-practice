@@ -175,7 +175,7 @@ console.log(isSquare(5));
 }
 
 solution(10); */
-
+/* 
 function solution(number) {
   let sum = 0;
   for (let i = 1; i < number; i++) {
@@ -187,3 +187,22 @@ function solution(number) {
 }
 
 solution(10);
+ */
+
+//kyu 6 sum of digits/digital root
+function digital_root(n) {
+  let strN = n.toString();
+  let sum = 0;
+  while (strN.length > 1) {
+    for (let i = 0; i < strN.length; i++) {
+      console.log(Number(strN[i]));
+      sum += Number(strN[i]);
+    }
+    strN = sum.toString();
+    sum = 0;
+  }
+
+  return Number(strN);
+}
+
+digital_root(456);

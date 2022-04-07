@@ -208,7 +208,7 @@ solution(10);
 digital_root(456); */
 
 //kyu 6 Who Likes it?
-function likes(names) {
+/* function likes(names) {
   names = names || [];
   switch (names.length) {
     case 0:
@@ -236,3 +236,17 @@ function likes(names) {
 }
 
 likes(["Jacob", "Aaron", "Aarongy"]);
+ */
+
+//kyu 6 Counting Duplicates
+function duplicateCount(text) {
+  let counting = {};
+  text = text.toLowerCase();
+  for (let i = 0; i <= text.length - 1; i++) {
+    counting[text[i]] ? counting[text[i]]++ : (counting[text[i]] = 1);
+  }
+
+  console.log(Object.values(counting).filter((item) => item > 1).length);
+}
+
+duplicateCount("aabBcde11");

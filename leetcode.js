@@ -7,7 +7,7 @@
 isPalindrome(1001); */
 
 //Roman to Integar
-let romanToInt = function (s) {
+/* let romanToInt = function (s) {
   let sum = 0;
   const romanObject = {
     I: 1,
@@ -19,7 +19,13 @@ let romanToInt = function (s) {
     M: 1000,
   };
   // console.log(Object.keys(romanObject), Object.values(romanObject));
-  for (let roman in romanObject) console.log(sum);
+  for (let i = 0; i <= s.length - 1; i++) {
+    if (romanObject[s[i]]) {
+      sum += Object.values(romanObject);
+      console.log(sum);
+    }
+  }
+  console.log(sum);
 };
 
-romanToInt("III");
+romanToInt("III"); */

@@ -239,7 +239,7 @@ likes(["Jacob", "Aaron", "Aarongy"]);
  */
 
 //kyu 6 Counting Duplicates
-function duplicateCount(text) {
+/* function duplicateCount(text) {
   let counting = {};
   text = text.toLowerCase();
   for (let i = 0; i <= text.length - 1; i++) {
@@ -250,3 +250,31 @@ function duplicateCount(text) {
 }
 
 duplicateCount("aabBcde11");
+ */
+
+// kyu 6 Duplicate Encoder
+// function duplicateEncode(word) {
+//   let counts = {};
+//   let newWord = "";
+//   word = word.toLowerCase();
+//   for (let i = 0; i <= word.length - 1; i++) {
+//     counts[word[i]] ? counts[word[i]]++ : (counts[word[i]] = 1);
+//   }
+//   for (let i = 0; i <= word.length - 1; i++) {
+//     counts[word[i]] > 1 ? (newWord += ")") : (newWord += "(");
+//   }
+//   console.log(newWord);
+// }
+
+function duplicateEncode(word) {
+  console.log(
+    word
+      .toLowerCase()
+      .split("")
+      .map(function (a, i, w) {
+        return w.indexOf(a) == w.lastIndexOf(a) ? "(" : ")";
+      })
+      .join("")
+  );
+}
+duplicateEncode("aaron");

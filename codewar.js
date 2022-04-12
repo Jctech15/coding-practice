@@ -266,7 +266,7 @@ duplicateCount("aabBcde11");
 //   console.log(newWord);
 // }
 
-function duplicateEncode(word) {
+/* function duplicateEncode(word) {
   console.log(
     word
       .toLowerCase()
@@ -278,3 +278,27 @@ function duplicateEncode(word) {
   );
 }
 duplicateEncode("aaron");
+ */
+
+//kyu 6 Persistent Bugger
+function persistence(num) {
+  let multiple = num;
+  let counter = 0;
+
+  if (num.toString().length < 1) {
+    return 0;
+  }
+
+  while (multiple.toString().length > 1) {
+    let test = 1;
+
+    for (let i = 0; i <= multiple.toString().length - 1; i++) {
+      test *= Number(multiple.toString()[i]);
+    }
+    counter++;
+    console.log(counter, test);
+    multiple = test;
+  }
+
+  console.log(counter);
+}

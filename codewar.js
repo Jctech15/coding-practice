@@ -281,7 +281,7 @@ duplicateEncode("aaron");
  */
 
 //kyu 6 Persistent Bugger
-function persistence(num) {
+/* function persistence(num) {
   let multiple = num;
   let counter = 0;
 
@@ -302,3 +302,20 @@ function persistence(num) {
 
   console.log(counter);
 }
+ */
+
+//kyu 6 Find The Parity Outlier
+function findOutlier(integers) {
+  // let evenArr = [];
+  // let oddArr = [];
+  // integers.forEach((num) => {
+  //   num % 2 === 0 ? evenArr.push(num) : oddArr.push(num);
+  // });
+  // console.log(evenArr.length === 1 ? evenArr[0] : oddArr[0]);
+
+  const evenArr = integers.filter((num) => num % 2 === 0);
+  return evenArr.length === 1
+    ? evenArr[0]
+    : integers.filter((num) => num % 2 !== 0)[0];
+}
+findOutlier([2, 6, 8, 10, 3]);

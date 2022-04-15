@@ -305,7 +305,7 @@ duplicateEncode("aaron");
  */
 
 //kyu 6 Find The Parity Outlier
-function findOutlier(integers) {
+/* function findOutlier(integers) {
   // let evenArr = [];
   // let oddArr = [];
   // integers.forEach((num) => {
@@ -318,4 +318,20 @@ function findOutlier(integers) {
     ? evenArr[0]
     : integers.filter((num) => num % 2 !== 0)[0];
 }
-findOutlier([2, 6, 8, 10, 3]);
+findOutlier([2, 6, 8, 10, 3]); */
+
+//kyu 6 Take a Ten Min Walk
+function isValidWalk(walk) {
+  const dirObj = {};
+  if (walk.length !== 10) {
+    return false;
+  }
+
+  walk.forEach((direction) => {
+    dirObj[direction] ? dirObj[direction]++ : (dirObj[direction] = 1);
+  });
+
+  if (dirObj["n"] === dirObj["s"] && dirObj["e"] === dirObj["w"]) {
+    return true;
+  }
+}

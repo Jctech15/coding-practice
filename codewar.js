@@ -353,3 +353,50 @@ function alphabetPosition(text) {
   return result.join(" ");
 }
  */
+
+//7 kyu Exes and Ohs
+function XO(str) {
+  // array.filter()
+
+  str = str.toLowerCase().split("");
+  const xCount = str.filter((character) => character === "x");
+  const oCount = str.filter((character) => character === "o");
+
+  if (xCount.length === 0 && oCount.length === 0) {
+    console.log(true);
+  }
+
+  console.log(xCount.length === oCount.length ? true : false);
+
+  //array.reduce()
+  /*   
+  str = str.toLowerCase().split("");
+  let countCharacter = str.reduce((allCharacter, character) => {
+    character in allCharacter
+      ? allCharacter[character]++
+      : (allCharacter[character] = 1);
+    return allCharacter;
+  }, {});
+
+  if (!countCharacter["x"] && !countCharacter["o"]) {
+    return true;
+  }
+
+  return countCharacter["x"] === countCharacter["o"] ? true : false; */
+
+  //loop and object
+  /*   let countCharacter = {};
+  str = str.toLowerCase();
+  for (let i = 0; i <= str.length - 1; i++) {
+    countCharacter[str[i]]
+      ? countCharacter[str[i]]++
+      : (countCharacter[str[i]] = 1);
+  }
+  if (!countCharacter["x"] && !countCharacter["o"]) {
+    return true;
+  }
+
+  return countCharacter["x"] === countCharacter["o"] ? true : false; */
+}
+
+XO("OoOm");

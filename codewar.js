@@ -320,7 +320,7 @@ duplicateEncode("aaron");
 }
 findOutlier([2, 6, 8, 10, 3]); */
 
-//kyu 6 Take a Ten Min Walk
+/* //kyu 6 Take a Ten Min Walk
 function isValidWalk(walk) {
   const dirObj = {};
   if (walk.length !== 10) {
@@ -335,3 +335,21 @@ function isValidWalk(walk) {
     return true;
   }
 }
+ */
+
+/* //kyu 6 Replace With Alphabet Position
+function alphabetPosition(text) {
+  text = text.toLowerCase().replace(/[^a-z]/gi, "");
+  let result = [];
+  const alphNum = {};
+  for (let i = 1; i <= 26; i++) {
+    const char = String.fromCharCode(97 + (i - 1));
+    alphNum[char] = i;
+  }
+
+  for (let i = 0; i <= text.length - 1; i++) {
+    result.push(alphNum[text[i]]);
+  }
+  return result.join(" ");
+}
+ */

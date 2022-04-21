@@ -353,7 +353,7 @@ function alphabetPosition(text) {
   return result.join(" ");
 }
  */
-
+/* 
 //7 kyu Exes and Ohs
 function XO(str) {
   // array.filter()
@@ -384,8 +384,8 @@ function XO(str) {
 
   return countCharacter["x"] === countCharacter["o"] ? true : false; */
 
-  //loop and object
-  /*   let countCharacter = {};
+//loop and object
+/*   let countCharacter = {};
   str = str.toLowerCase();
   for (let i = 0; i <= str.length - 1; i++) {
     countCharacter[str[i]]
@@ -396,7 +396,54 @@ function XO(str) {
     return true;
   }
 
-  return countCharacter["x"] === countCharacter["o"] ? true : false; */
+  //return countCharacter["x"] === countCharacter["o"] ? true : false;
+}
+ */
+
+/* //kyu 6 Your order, please
+function order(words) {
+  words = words.split(" ");
+  console.log(words);
 }
 
-XO("OoOm");
+order("is2 Thi1s T4est 3a");
+
+// "is2 Thi1s T4est 3a"  -->  "Thi1s is2 3a T4est"
+// "4of Fo1r pe6ople g3ood th5e the2"  -->  "Fo1r the2 g3ood 4of th5e pe6ople"
+// ""  -->  "" */
+
+/* //kyu 7 Shortest Word
+
+function findShort(s) {
+  return s
+    .split(" ")
+    .map((word) => word.length)
+    .sort((a, b) => a - b)[0];
+} */
+
+//kyu 7 Complmentary DNA
+function DNAStrand(dna) {
+  dna = dna.split("");
+  return dna
+    .map((e) => {
+      switch (e) {
+        case "A":
+          return "T";
+          break;
+        case "T":
+          return "A";
+          break;
+        case "G":
+          return "C";
+          break;
+        case "C":
+          return "G";
+          break;
+        default:
+          break;
+      }
+    })
+    .join("");
+}
+
+DNAStrand("AAAA");

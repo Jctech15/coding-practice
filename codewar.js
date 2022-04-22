@@ -406,11 +406,11 @@ function order(words) {
   console.log(words);
 }
 
-order("is2 Thi1s T4est 3a");
+order("is2 Thi1s T4est 3a"); */
 
 // "is2 Thi1s T4est 3a"  -->  "Thi1s is2 3a T4est"
 // "4of Fo1r pe6ople g3ood th5e the2"  -->  "Fo1r the2 g3ood 4of th5e pe6ople"
-// ""  -->  "" */
+// ""  -->  ""
 
 /* //kyu 7 Shortest Word
 
@@ -422,7 +422,7 @@ function findShort(s) {
 } */
 
 //kyu 7 Complmentary DNA
-function DNAStrand(dna) {
+/* function DNAStrand(dna) {
   dna = dna.split("");
   return dna
     .map((e) => {
@@ -444,6 +444,22 @@ function DNAStrand(dna) {
       }
     })
     .join("");
+} */
+
+//kyu 7 Credit Card Mask
+// return masked string
+function maskify(cc) {
+  if (cc.length <= 4) {
+    return cc;
+  }
+
+  let lastDigits = cc.slice(cc.length - 4, cc.length);
+  return cc
+    .split("")
+    .slice(0, cc.length - 4)
+    .map((e) => (e = "#"))
+    .join("")
+    .concat(lastDigits);
 }
 
-DNAStrand("AAAA");
+maskify("4556364607935616");

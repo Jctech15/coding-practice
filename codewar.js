@@ -446,7 +446,7 @@ function findShort(s) {
     .join("");
 } */
 
-//kyu 7 Credit Card Mask
+/* //kyu 7 Credit Card Mask
 // return masked string
 function maskify(cc) {
   if (cc.length <= 4) {
@@ -461,5 +461,23 @@ function maskify(cc) {
     .join("")
     .concat(lastDigits);
 }
+ */
+function getSum(a, b) {
+  let sum = 0;
+  if (a === b) {
+    return a;
+  }
+  if (a > b) {
+    for (let i = b; i <= a; i++) {
+      sum += i;
+    }
+  } else {
+    for (let i = a; i <= b; i++) {
+      sum += i;
+    }
+  }
 
-maskify("4556364607935616");
+  console.log(sum);
+}
+
+getSum(0, 3);

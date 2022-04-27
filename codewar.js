@@ -400,17 +400,19 @@ function XO(str) {
 }
  */
 
-/* //kyu 6 Your order, please
-function order(words) {
-  words = words.split(" ");
-  console.log(words);
+//kyu 6 Unique In Order
+function uniqueInOrder(iterable) {
+  //your code here - remember iterable can be a string or an array
+  let unique = [];
+  for (let i = 0; i <= iterable.length - 1; i++) {
+    if (iterable[i] !== iterable[i + 1]) {
+      unique.push(iterable[i]);
+    }
+  }
+  console.log(unique);
 }
 
-order("is2 Thi1s T4est 3a"); */
-
-// "is2 Thi1s T4est 3a"  -->  "Thi1s is2 3a T4est"
-// "4of Fo1r pe6ople g3ood th5e the2"  -->  "Fo1r the2 g3ood 4of th5e pe6ople"
-// ""  -->  ""
+uniqueInOrder("ABBCcAD");
 
 /* //kyu 7 Shortest Word
 
@@ -462,7 +464,7 @@ function maskify(cc) {
     .concat(lastDigits);
 }
  */
-function getSum(a, b) {
+/* function getSum(a, b) {
   let sum = 0;
   if (a === b) {
     return a;
@@ -481,3 +483,4 @@ function getSum(a, b) {
 }
 
 getSum(0, 3);
+ */

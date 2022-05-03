@@ -506,9 +506,22 @@ getSum(0, 3);
 // digPow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
  */
 
-//kyu 7
+/* //kyu 7
 function sumTwoSmallestNumbers(numbers) {
   numbers = numbers.sort((a, b) => a - b);
   return numbers[0] + numbers[1];
 }
 sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453]);
+ */
+
+//kyu 6 Equal Sides of An Array
+function findEvenIndex(arr) {
+  let left = 0;
+  let right = arr.reduce((s, n) => s + n, 0);
+  for (let i = 0; i < arr.length; i++) {
+    right -= arr[i];
+    if (left === right) return i;
+    left += arr[i];
+  }
+  return -1;
+}

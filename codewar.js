@@ -515,7 +515,7 @@ sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453]);
  */
 
 //kyu 6 Equal Sides of An Array
-function findEvenIndex(arr) {
+/* function findEvenIndex(arr) {
   let left = 0;
   let right = arr.reduce((s, n) => s + n, 0);
   for (let i = 0; i < arr.length; i++) {
@@ -524,4 +524,9 @@ function findEvenIndex(arr) {
     left += arr[i];
   }
   return -1;
+} */
+
+//kyu 8 Opposite Number
+function opposite(number) {
+  return -number;
 }

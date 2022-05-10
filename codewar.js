@@ -526,7 +526,65 @@ sumTwoSmallestNumbers([10, 343445353, 3453445, 3453545353453]);
   return -1;
 } */
 
-//kyu 8 Opposite Number
+/* //kyu 8 Opposite Number
 function opposite(number) {
   return -number;
+} */
+
+//kyu 8 Remove String Spaces
+/* function noSpace(x) {
+  // let newX = "";
+  // x = x.split(" ");
+  // x.forEach((e) => {
+  //   if (e !== " ") {
+  //     newX += e;
+  //   }
+  // });
+  // return newX;
+  console.log(x.split(" ").join(""));
 }
+
+noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"); */
+
+/* function findEvenIndex(arr) {
+  let arrSum = arr.reduce((sum, current) => {
+    return (sum += current);
+  }, 0);
+  let compareSum = 0;
+  arr.forEach((e, i) => {
+    compareSum += e;
+    if (compareSum === arrSum) {
+      console.log(i);
+    }
+    arrSum -= e;
+  });
+  return -1;
+}
+ */
+
+//kyu 6 Consecutive Strings
+/* function longestConsec(strarr, k) {
+  if (k <= 0 || strarr.length <= 0 || k > strarr.length) {
+    return "";
+  }
+
+  let dict = {};
+  let highest = 0;
+  for (let i = 0; i <= strarr.length - 1; i++) {
+    const latter = i + k > strarr.length ? strarr.length : i + k; //2
+    let currentStr = strarr.slice(i, latter).join(""); //wlwsasphmxxowiaxujylentrklctozmymu
+    let strLength = currentStr.length;
+
+    if (strLength > highest) {
+      highest = strLength;
+    }
+    dict[currentStr] = strLength;
+  }
+  for (let key in dict) {
+    if (dict[key] === highest) {
+      console.log(key);
+    }
+  }
+}
+
+longestConsec(["wlwsasphmxx", "owiaxujylentrklctozmymu", "wpgozvxxiu"], 2); */

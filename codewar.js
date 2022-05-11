@@ -588,3 +588,16 @@ noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"); */
 }
 
 longestConsec(["wlwsasphmxx", "owiaxujylentrklctozmymu", "wpgozvxxiu"], 2); */
+
+//kyu 7 friend or foe?
+function friend(friends) {
+  //   let newFriend = []
+  //   friends.forEach ( e => {
+  //     if (e.length === 4) {
+  //       newFriend.push(e)
+  //     }
+  //   })
+  //   return newFriend
+
+  return friends.filter((e) => e.length === 4);
+}

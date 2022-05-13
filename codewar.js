@@ -589,7 +589,7 @@ noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"); */
 
 longestConsec(["wlwsasphmxx", "owiaxujylentrklctozmymu", "wpgozvxxiu"], 2); */
 
-//kyu 7 friend or foe?
+/* //kyu 7 friend or foe?
 function friend(friends) {
   //   let newFriend = []
   //   friends.forEach ( e => {
@@ -600,4 +600,24 @@ function friend(friends) {
   //   return newFriend
 
   return friends.filter((e) => e.length === 4);
+} */
+
+//kyu 7 Two to One
+function longest(s1, s2) {
+  let newStr = s1 + s2;
+  let uniqueStr = [];
+  for (let i = 0; i <= newStr.length - 1; i++) {
+    if (!uniqueStr.includes(newStr[i])) uniqueStr.push(newStr[i]);
+  }
+
+  console.log(uniqueStr.sort((a, b) => a.localeCompare(b)).join(""));
 }
+// const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");
+longest("xyaabbbccccdefww", "xxxxyyyyabklmopq");
+
+// a = "xyaabbbccccdefww"
+// b = "xxxxyyyyabklmopq"
+// longest(a, b) -> "abcdefklmopqwxy"
+
+// a = "abcdefghijklmnopqrstuvwxyz"
+// longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"

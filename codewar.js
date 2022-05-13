@@ -604,20 +604,40 @@ function friend(friends) {
 
 //kyu 7 Two to One
 function longest(s1, s2) {
-  let newStr = s1 + s2;
-  let uniqueStr = [];
-  for (let i = 0; i <= newStr.length - 1; i++) {
-    if (!uniqueStr.includes(newStr[i])) uniqueStr.push(newStr[i]);
-  }
+  // let newStr = s1 + s2;
+  // let uniqueStr = [];
+  // for (let i = 0; i <= newStr.length - 1; i++) {
+  //   if (!uniqueStr.includes(newStr[i])) uniqueStr.push(newStr[i]);
+  // }
 
-  console.log(uniqueStr.sort((a, b) => a.localeCompare(b)).join(""));
+  // console.log(uniqueStr.sort((a, b) => a.localeCompare(b)).join(""));
+  const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");
+  return longest;
 }
-// const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");
+
 longest("xyaabbbccccdefww", "xxxxyyyyabklmopq");
 
-// a = "xyaabbbccccdefww"
-// b = "xxxxyyyyabklmopq"
-// longest(a, b) -> "abcdefklmopqwxy"
-
-// a = "abcdefghijklmnopqrstuvwxyz"
-// longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
+//kyu 7 Categorize New Member
+// function openOrSenior(data) {
+//   let category = [];
+//   data.forEach((member) => {
+//     member[0] >= 55 && member[1] > 7
+//       ? category.push("Senior")
+//       : category.push("Open");
+//   });
+//   console.log(category);
+// }
+function openOrSenior(data) {
+  return data.map(([age, handicap]) =>
+    age >= 55 && handicap > 7 ? "Senior" : "Open"
+  );
+}
+input = [
+  [18, 20],
+  [45, 2],
+  [61, 12],
+  [37, 6],
+  [21, 21],
+  [78, 9],
+];
+openOrSenior(input);

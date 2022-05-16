@@ -626,7 +626,7 @@ longest("xyaabbbccccdefww", "xxxxyyyyabklmopq");
 //       : category.push("Open");
 //   });
 //   console.log(category);
-// }
+/* // }
 function openOrSenior(data) {
   return data.map(([age, handicap]) =>
     age >= 55 && handicap > 7 ? "Senior" : "Open"
@@ -641,3 +641,16 @@ input = [
   [78, 9],
 ];
 openOrSenior(input);
+ */
+
+function dontGiveMeFive(start, end) {
+  let list = [];
+  for (let num = start; num <= end; num++) {
+    if (!num.toString().includes("5")) {
+      list.push(num);
+    }
+  }
+
+  console.log(list.length);
+}
+dontGiveMeFive(4, 17);

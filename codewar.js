@@ -643,7 +643,8 @@ input = [
 openOrSenior(input);
  */
 
-function dontGiveMeFive(start, end) {
+//kyu 7 Don't Give Me Five
+/* function dontGiveMeFive(start, end) {
   let list = [];
   for (let num = start; num <= end; num++) {
     if (!num.toString().includes("5")) {
@@ -653,4 +654,4 @@ function dontGiveMeFive(start, end) {
 
   console.log(list.length);
 }
-dontGiveMeFive(4, 17);
+dontGiveMeFive(4, 17); */

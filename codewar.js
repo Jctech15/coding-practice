@@ -655,3 +655,8 @@ openOrSenior(input);
   console.log(list.length);
 }
 dontGiveMeFive(4, 17); */
+
+//kyu 7 String Ends with?
+function solution(str, ending) {
+  return str.endsWith(ending);
+}

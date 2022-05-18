@@ -602,20 +602,20 @@ function friend(friends) {
   return friends.filter((e) => e.length === 4);
 } */
 
-//kyu 7 Two to One
-function longest(s1, s2) {
-  // let newStr = s1 + s2;
-  // let uniqueStr = [];
-  // for (let i = 0; i <= newStr.length - 1; i++) {
-  //   if (!uniqueStr.includes(newStr[i])) uniqueStr.push(newStr[i]);
-  // }
+// //kyu 7 Two to One
+// function longest(s1, s2) {
+//   // let newStr = s1 + s2;
+//   // let uniqueStr = [];
+//   // for (let i = 0; i <= newStr.length - 1; i++) {
+//   //   if (!uniqueStr.includes(newStr[i])) uniqueStr.push(newStr[i]);
+//   // }
 
-  // console.log(uniqueStr.sort((a, b) => a.localeCompare(b)).join(""));
-  const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");
-  return longest;
-}
+//   // console.log(uniqueStr.sort((a, b) => a.localeCompare(b)).join(""));
+//   const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");
+//   return longest;
+// }
 
-longest("xyaabbbccccdefww", "xxxxyyyyabklmopq");
+// longest("xyaabbbccccdefww", "xxxxyyyyabklmopq");
 
 //kyu 7 Categorize New Member
 // function openOrSenior(data) {
@@ -656,7 +656,12 @@ openOrSenior(input);
 }
 dontGiveMeFive(4, 17); */
 
-//kyu 7 String Ends with?
-function solution(str, ending) {
-  return str.endsWith(ending);
+// //kyu 7 String Ends with?
+// function solution(str, ending) {
+//   return str.endsWith(ending);
+// }
+
+//kyu 7 number of people in the bus
+function litres(time) {
+  return Math.floor(time * 0.5);
 }

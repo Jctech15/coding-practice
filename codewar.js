@@ -661,7 +661,32 @@ dontGiveMeFive(4, 17); */
 //   return str.endsWith(ending);
 // }
 
-//kyu 7 number of people in the bus
+/* //kyu 7 number of people in the bus
 function litres(time) {
   return Math.floor(time * 0.5);
 }
+ */
+
+//kyu 7 Number of People in the Bus
+function totalPassenger(busStops) {
+  let passengerOn = 0;
+  let passengerOff = 0;
+  for (let i = 0; i <= busStops.length - 1; i++) {
+    passengerOn += busStops[i][0];
+    passengerOff += busStops[i][1];
+  }
+  console.log(
+    passengerOn > passengerOff
+      ? passengerOn - passengerOff
+      : passengerOff - passengerOn
+  );
+}
+
+totalPassenger([
+  [3, 0],
+  [9, 1],
+  [4, 10],
+  [12, 2],
+  [6, 1],
+  [7, 10],
+]);

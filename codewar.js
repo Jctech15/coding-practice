@@ -667,7 +667,7 @@ function litres(time) {
 }
  */
 
-//kyu 7 Number of People in the Bus
+/* //kyu 7 Number of People in the Bus
 function totalPassenger(busStops) {
   let passengerOn = 0;
   let passengerOff = 0;
@@ -690,3 +690,14 @@ totalPassenger([
   [6, 1],
   [7, 10],
 ]);
+ */
+
+//kyu 7 Reverse Word
+function reverseWords(str) {
+  return str
+    .split(" ")
+    .map((word) => word.split("").reverse().join(""))
+    .join(" ");
+}
+
+reverseWords("The quick brown fox jumps over the lazy dog.");

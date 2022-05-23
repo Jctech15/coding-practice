@@ -692,12 +692,20 @@ totalPassenger([
 ]);
  */
 
-//kyu 7 Reverse Word
-function reverseWords(str) {
-  return str
-    .split(" ")
-    .map((word) => word.split("").reverse().join(""))
-    .join(" ");
-}
+// //kyu 7 Reverse Word
+// function reverseWords(str) {
+//   return str
+//     .split(" ")
+//     .map((word) => word.split("").reverse().join(""))
+//     .join(" ");
+// }
 
-reverseWords("The quick brown fox jumps over the lazy dog.");
+// reverseWords("The quick brown fox jumps over the lazy dog.");
+function findNeedle(haystack) {
+  haystack.forEach((word, i) => {
+    if (word === "needle") {
+      console.log(`found the needle at position ${i}`);
+    }
+  });
+}
+findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]);

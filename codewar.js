@@ -700,7 +700,7 @@ totalPassenger([
 //     .join(" ");
 // }
 
-// reverseWords("The quick brown fox jumps over the lazy dog.");
+/* // reverseWords("The quick brown fox jumps over the lazy dog.");
 function findNeedle(haystack) {
   haystack.forEach((word, i) => {
     if (word === "needle") {
@@ -709,3 +709,20 @@ function findNeedle(haystack) {
   });
 }
 findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]);
+ */
+
+//kyu 7 factorial
+function factorial(n) {
+  let product = 1;
+  if (n === 0) {
+    return 1;
+  }
+  if (n < 0 || n > 12) {
+    throw RangeError();
+  }
+  for (let i = n; i >= 1; i--) {
+    console.log((product *= i));
+  }
+}
+
+factorial(3);

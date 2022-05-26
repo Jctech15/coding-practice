@@ -711,7 +711,7 @@ function findNeedle(haystack) {
 findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]);
  */
 
-//kyu 7 factorial
+/* //kyu 7 factorial
 function factorial(n) {
   let product = 1;
   if (n === 0) {
@@ -726,3 +726,16 @@ function factorial(n) {
 }
 
 factorial(3);
+ */
+
+//kyu 7 Small enough?
+function smallEnough(a, limit) {
+  // a = a.sort((a, b) => a - b);
+  // min = Math.min(...a);
+  // max = Math.max(...a);
+  // console.log(a, min, max, limit);
+  // console.log(limit >= min && max <= limit);
+  return Math.max(...a) <= limit;
+}
+
+smallEnough([2, 7, 1, 1, 6, 1, 6, 5, 6, 0, 2, 6, 1, 2], 3);

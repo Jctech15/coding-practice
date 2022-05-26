@@ -728,7 +728,7 @@ function factorial(n) {
 factorial(3);
  */
 
-//kyu 7 Small enough?
+/* //kyu 7 Small enough?
 function smallEnough(a, limit) {
   // a = a.sort((a, b) => a - b);
   // min = Math.min(...a);
@@ -739,3 +739,11 @@ function smallEnough(a, limit) {
 }
 
 smallEnough([2, 7, 1, 1, 6, 1, 6, 5, 6, 0, 2, 6, 1, 2], 3);
+ */
+
+//kyu 7 odd or even
+function oddOrEven(array) {
+  return array.reduce((total, current) => (total += current), 0) % 2 === 0
+    ? "even"
+    : "odd";
+}

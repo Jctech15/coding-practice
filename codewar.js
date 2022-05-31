@@ -741,9 +741,15 @@ function smallEnough(a, limit) {
 smallEnough([2, 7, 1, 1, 6, 1, 6, 5, 6, 0, 2, 6, 1, 2], 3);
  */
 
-//kyu 7 odd or even
+/* //kyu 7 odd or even
 function oddOrEven(array) {
   return array.reduce((total, current) => (total += current), 0) % 2 === 0
     ? "even"
     : "odd";
+}
+ */
+
+//kyu 7Convert boolean values to strings 'Yes' or 'No'.
+function boolToWord(bool) {
+  return bool === true ? yes : no;
 }

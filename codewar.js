@@ -749,7 +749,16 @@ function oddOrEven(array) {
 }
  */
 
-//kyu 7Convert boolean values to strings 'Yes' or 'No'.
+/* //kyu 8 Convert boolean values to strings 'Yes' or 'No'.
 function boolToWord(bool) {
   return bool === true ? yes : no;
 }
+
+ */
+
+//kyu 8 removing elements
+function removeEveryOther(arr) {
+  console.log(arr.filter((e, i) => i % 2 === 0));
+}
+
+removeEveryOther([1, 2]);

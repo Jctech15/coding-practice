@@ -756,9 +756,15 @@ function boolToWord(bool) {
 
  */
 
-//kyu 8 removing elements
+/* //kyu 8 removing elements
 function removeEveryOther(arr) {
   console.log(arr.filter((e, i) => i % 2 === 0));
 }
 
 removeEveryOther([1, 2]);
+ */
+
+//kyu 8 Name Shuffler
+function nameShuffler(str) {
+  return str.split(" ").reverse().join(" ");
+}

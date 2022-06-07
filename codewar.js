@@ -764,7 +764,28 @@ function removeEveryOther(arr) {
 removeEveryOther([1, 2]);
  */
 
-//kyu 8 Name Shuffler
+/* //kyu 8 Name Shuffler
 function nameShuffler(str) {
   return str.split(" ").reverse().join(" ");
 }
+ */
+
+/* //leet code 169. Majority Element
+function majority(nums) {
+  let count = {};
+  let max = 0;
+  nums.forEach((num) => {
+    count[num] ? count[num]++ : (count[num] = 1);
+  });
+
+
+
+  for (const key in count) {
+    if (count[key] > max) {
+      max = count[key];
+    }
+  }
+}
+
+majority([1, 2, 3, 3]);
+ */

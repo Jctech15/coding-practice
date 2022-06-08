@@ -789,3 +789,11 @@ function majority(nums) {
 
 majority([1, 2, 3, 3]);
  */
+
+//kyu 7 Find the Middle Element
+function gimme(triplet) {
+  let sort = [...triplet].sort((a, b) => a - b);
+  console.log(triplet, sort, sort[1], triplet.indexOf(sort[1]));
+}
+
+gimme([2, 3, 1]);

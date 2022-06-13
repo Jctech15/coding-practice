@@ -790,10 +790,22 @@ function majority(nums) {
 majority([1, 2, 3, 3]);
  */
 
-//kyu 7 Find the Middle Element
+/* //kyu 7 Find the Middle Element
 function gimme(triplet) {
   let sort = [...triplet].sort((a, b) => a - b);
   console.log(triplet, sort, sort[1], triplet.indexOf(sort[1]));
 }
 
-gimme([2, 3, 1]);
+gimme([2, 3, 1]); */
+
+//kyu 7 Maximum Product
+function adjacentElementsProduct(array) {
+  let productArray = [];
+  for (let i = 0; i <= array.length - 2; i++) {
+    productArray.push(array[i] * array[i + 1]);
+  }
+
+  console.log(Math.max(...productArray));
+}
+
+adjacentElementsProduct([9, 5, 10, 2, 24, -1, -48]);

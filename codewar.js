@@ -798,7 +798,7 @@ function gimme(triplet) {
 
 gimme([2, 3, 1]); */
 
-//kyu 7 Maximum Product
+/* //kyu 7 Maximum Product
 function adjacentElementsProduct(array) {
   let productArray = [];
   for (let i = 0; i <= array.length - 2; i++) {
@@ -809,3 +809,15 @@ function adjacentElementsProduct(array) {
 }
 
 adjacentElementsProduct([9, 5, 10, 2, 24, -1, -48]);
+ */
+
+//kyu 7 Sum of a sequence
+const sequenceSum = (begin, end, step) => {
+  let sum = 0;
+  for (let num = begin; num <= end; num += step) {
+    sum += num;
+  }
+  console.log(sum);
+};
+
+sequenceSum(2, 6, 2);

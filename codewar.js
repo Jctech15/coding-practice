@@ -811,7 +811,7 @@ function adjacentElementsProduct(array) {
 adjacentElementsProduct([9, 5, 10, 2, 24, -1, -48]);
  */
 
-//kyu 7 Sum of a sequence
+/* //kyu 7 Sum of a sequence
 const sequenceSum = (begin, end, step) => {
   let sum = 0;
   for (let num = begin; num <= end; num += step) {
@@ -821,3 +821,15 @@ const sequenceSum = (begin, end, step) => {
 };
 
 sequenceSum(2, 6, 2);
+ */
+
+//kyu 8 Reverse List Order
+function reverseList(list) {
+  let newList = [];
+  for (let i = list.length - 1; i >= 0; i--) {
+    newList.push(list[i]);
+  }
+  console.log(newList);
+}
+
+reverseList([1, 2, 3, 4]);

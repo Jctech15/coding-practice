@@ -823,7 +823,7 @@ const sequenceSum = (begin, end, step) => {
 sequenceSum(2, 6, 2);
  */
 
-//kyu 8 Reverse List Order
+/* //kyu 8 Reverse List Order
 function reverseList(list) {
   let newList = [];
   for (let i = list.length - 1; i >= 0; i--) {
@@ -833,3 +833,37 @@ function reverseList(list) {
 }
 
 reverseList([1, 2, 3, 4]);
+ */
+
+//kyu 8 Counting Sheep...
+function countSheeps(arrayOfSheep) {
+  return arrayOfSheep.filter((sheep) => sheep === true).length;
+}
+
+let sheep = [
+  true,
+  true,
+  true,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false,
+  true,
+  false,
+  true,
+  false,
+  false,
+  true,
+  true,
+  true,
+  true,
+  true,
+  false,
+  false,
+  true,
+  true,
+];
+countSheeps(sheep);

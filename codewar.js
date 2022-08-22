@@ -835,7 +835,7 @@ function reverseList(list) {
 reverseList([1, 2, 3, 4]);
  */
 
-//kyu 8 Counting Sheep...
+/* //kyu 8 Counting Sheep...
 function countSheeps(arrayOfSheep) {
   return arrayOfSheep.filter((sheep) => sheep === true).length;
 }
@@ -866,4 +866,11 @@ let sheep = [
   true,
   true,
 ];
-countSheeps(sheep);
+countSheeps(sheep); */
+
+//kyu 8 You only need one- Beginner
+function check(a, x) {
+  return a.includes(x);
+}
+
+check([66, 101], 66);

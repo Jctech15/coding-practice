@@ -868,9 +868,51 @@ let sheep = [
 ];
 countSheeps(sheep); */
 
-//kyu 8 You only need one- Beginner
+/* //kyu 8 You only need one- Beginner
 function check(a, x) {
   return a.includes(x);
 }
 
-check([66, 101], 66);
+check([66, 101], 66); */
+/* 
+// kyu 7 Compelte the Pattern #1
+function pattern(n) {
+  let output = "";
+  if (n < 1) {
+    return "";
+  }
+  if (n >= 1) {
+    for (let i = 1; i <= n; i++) {
+      if (i === n) {
+        output += `${i.toString().repeat(i)}`;
+      } else {
+        output += `${i.toString().repeat(i)}\n`;
+      }
+    }
+  }
+  console.log(output);
+}
+pattern(11);
+ */
+
+function switcheroo(x) {
+  // let array = x.split("");
+  // array.forEach((letter, i) => {
+  //   if (letter === "a") {
+  //     array[i] = "b";
+  //   }
+  //   if (letter === "b") {
+  //     array[i] = "a";
+  //   }
+  // });
+
+  // return array.join("");
+
+  let mapArray = x
+    .split("")
+    .map((element) => (element === "a" ? "b" : element === "b" ? "a" : "c"))
+    .join("");
+  console.log(mapArray);
+}
+
+switcheroo("abc"); //bac

@@ -874,6 +874,7 @@ function check(a, x) {
 }
 
 check([66, 101], 66); */
+
 /* 
 // kyu 7 Compelte the Pattern #1
 function pattern(n) {
@@ -895,6 +896,8 @@ function pattern(n) {
 pattern(11);
  */
 
+/* //kyu 7 switcheroo
+
 function switcheroo(x) {
   // let array = x.split("");
   // array.forEach((letter, i) => {
@@ -915,4 +918,32 @@ function switcheroo(x) {
   console.log(mapArray);
 }
 
-switcheroo("abc"); //bac
+switcheroo("abc"); //bac */
+
+/* 
+//kyu 7 LIeks vs Dislikes
+
+function likeOrDislike(buttons) {
+  let state = "Nothing";
+
+  for (let i = 0; i < buttons.length; i++) {
+    if (buttons[i] === state) {
+      state = "Nothing";
+    } else {
+      state = buttons[i];
+    }
+  }
+
+  return state;
+}
+
+/* function likeOrDislike(buttons) {
+  return buttons.reduce(
+    (state, button) => (button === state ? Nothing : button),
+    Nothing
+  );
+} 
+
+likeOrDislike(["Like", "Dislike"]);
+
+ */

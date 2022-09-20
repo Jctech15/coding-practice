@@ -947,3 +947,15 @@ function likeOrDislike(buttons) {
 likeOrDislike(["Like", "Dislike"]);
 
  */
+
+//kyu 7 Building a square
+
+function generateShape(integer) {
+  let shape = `${"+".repeat(integer)}`;
+  for (let count = 2; count <= integer; count++) {
+    shape += `\n${"+".repeat(integer)}`;
+  }
+  console.log(shape);
+}
+
+generateShape(8);

@@ -948,7 +948,7 @@ likeOrDislike(["Like", "Dislike"]);
 
  */
 
-//kyu 7 Building a square
+/* //kyu 7 Building a square
 
 function generateShape(integer) {
   let shape = `${"+".repeat(integer)}`;
@@ -958,4 +958,16 @@ function generateShape(integer) {
   console.log(shape);
 }
 
-generateShape(8);
+generateShape(8); */
+
+//kyu 7 Maximum Multiple
+function maxMultiple(divisor, bound) {
+  // return divisor * Math.floor(bound / divisor);
+
+  return bound - (bound % divisor);
+}
+
+maxMultiple(37, 200);
+
+//maxMultiple (37,200) ==> return (185)
+//maxMultiple(2,6) ==> 6

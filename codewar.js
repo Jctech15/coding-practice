@@ -959,7 +959,7 @@ function generateShape(integer) {
 }
 
 generateShape(8); */
-
+/* 
 //kyu 7 Maximum Multiple
 function maxMultiple(divisor, bound) {
   // return divisor * Math.floor(bound / divisor);
@@ -971,3 +971,49 @@ maxMultiple(37, 200);
 
 //maxMultiple (37,200) ==> return (185)
 //maxMultiple(2,6) ==> 6
+ */
+
+/* function shuffleIt(arr, ...nums) {
+  for (let subArr of nums) {
+    if (subArr[0] === 
+  }
+
+}
+// The function accepts two or more parameters.
+//The first parameter arr is an array of numbers, followed by an arbitrary number of numeric arrays.
+//Each numeric array contains two numbers, which are indices for elements in arr (the numbers will always be within bounds).
+//For every such array, swap the elements.
+// shuffleIt([1,2,3,4,5],[1,2]) should return [1,3,2,4,5]
+// shuffleIt([1,2,3,4,5],[1,2],[3,4]) should return [1,3,2,5,4]
+// shuffleIt([1,2,3,4,5],[1,2],[3,4],[2,3]) should return [1,3,5,2,4]
+shuffleIt([1, 2, 3, 4, 5], [1, 2], [3, 4]); */
+
+//kyu 8 Thinkful - Logic Drills: Traffic light
+function updateLight(current) {
+  // if (current === "green") {
+  //   return "yellow";
+  // } else if (current === "yellow") {
+  //   return "red";
+  // } else {
+  //   return "green";
+  // }
+
+  switch (current) {
+    case "green":
+      return "yellow";
+      break;
+    case "yellow":
+      return "red";
+      break;
+    case "red":
+      return "green";
+      break;
+    default:
+      throw "Error: wrong input";
+      break;
+  }
+}
+
+updateLight("green");
+//You're writing code to control your town's traffic lights.
+//You need a function to handle each change from green, to yellow, to red, and then to green again.

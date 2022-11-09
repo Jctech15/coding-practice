@@ -988,32 +988,44 @@ maxMultiple(37, 200);
 // shuffleIt([1,2,3,4,5],[1,2],[3,4],[2,3]) should return [1,3,5,2,4]
 shuffleIt([1, 2, 3, 4, 5], [1, 2], [3, 4]); */
 
-//kyu 8 Thinkful - Logic Drills: Traffic light
-function updateLight(current) {
-  // if (current === "green") {
-  //   return "yellow";
-  // } else if (current === "yellow") {
-  //   return "red";
-  // } else {
-  //   return "green";
-  // }
+// //kyu 8 Thinkful - Logic Drills: Traffic light
+// function updateLight(current) {
+//   // if (current === "green") {
+//   //   return "yellow";
+//   // } else if (current === "yellow") {
+//   //   return "red";
+//   // } else {
+//   //   return "green";
+//   // }
 
-  switch (current) {
-    case "green":
-      return "yellow";
-      break;
-    case "yellow":
-      return "red";
-      break;
-    case "red":
-      return "green";
-      break;
-    default:
-      throw "Error: wrong input";
-      break;
-  }
+//   switch (current) {
+//     case "green":
+//       return "yellow";
+//       break;
+//     case "yellow":
+//       return "red";
+//       break;
+//     case "red":
+//       return "green";
+//       break;
+//     default:
+//       throw "Error: wrong input";
+//       break;
+//   }
+// }
+
+// updateLight("green");
+// //You're writing code to control your town's traffic lights.
+// //You need a function to handle each change from green, to yellow, to red, and then to green again.
+
+//kyu 8 Get the mean of an array
+function getAverage(marks) {
+  //TODO : calculate the downward rounded average of the marks array
+  let sum = 0;
+  marks.forEach((i) => {
+    sum += i;
+  });
+  console.log(Math.floor(sum / marks.length));
 }
 
-updateLight("green");
-//You're writing code to control your town's traffic lights.
-//You need a function to handle each change from green, to yellow, to red, and then to green again.
+getAverage([1, 1, 1, 1, 1, 1, 1, 2]);

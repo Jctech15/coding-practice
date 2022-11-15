@@ -1030,32 +1030,35 @@ shuffleIt([1, 2, 3, 4, 5], [1, 2], [3, 4]); */
 
 // getAverage([1, 1, 1, 1, 1, 1, 1, 2]);
 
-//kyu 6 Sort theh odd
-function sortArray(array) {
-  let oddArray = array
-    .filter((num) => Math.abs(num) % 2 === 1)
-    .sort((a, b) => a - b);
+// //kyu 6 Sort theh odd
+// function sortArray(array) {
+//   let oddArray = array
+//     .filter((num) => Math.abs(num) % 2 === 1)
+//     .sort((a, b) => a - b);
 
-  let sortedArray = [];
-  array.forEach((num) => {
-    if (Math.abs(num) % 2 === 1) {
-      sortedArray.push(oddArray.shift());
-    } else {
-      sortedArray.push(num);
-    }
-  });
-  console.log(sortedArray);
+//   let sortedArray = [];
+//   array.forEach((num) => {
+//     if (Math.abs(num) % 2 === 1) {
+//       sortedArray.push(oddArray.shift());
+//     } else {
+//       sortedArray.push(num);
+//     }
+//   });
+//   console.log(sortedArray);
+// }
+
+// function sortArray(array) {
+//   const odd = array.filter((x) => x % 2).sort((a, b) => a - b);
+//   //[3,5]
+//   return array.map((x) => (x % 2 ? odd.shift() : x));
+//   //[5, 8, 6, 3, 4];
+// }
+
+// //[5, 8, 6, 3, 4]  =>  [3, 8, 6, 5, 4]
+
+//kyu 8 Convert number to reversed array of digits
+function digitize(n) {
+  console.log(n.toString().split("").map(Number).reverse());
 }
 
-function sortArray(array) {
-  const odd = array.filter((x) => x % 2).sort((a, b) => a - b);
-  //[3,5]
-  return array.map((x) => (x % 2 ? odd.shift() : x));
-  //[5, 8, 6, 3, 4];
-}
-
-// sortArray([
-//   -41, -44, 5, 9, 11, -30, -38, 13, -3, 21, 10, -19, -46, -10, 16, -4, -45, -14,
-//   -10, 10, 31, 31, 33, -25, -2, -23, 38, 16, -37,
-// ]); //[ -45,   -44,  -41,  -37,  -25,  -30,  -38,  -23,  -19,  -3,  10,  5,  -46,  -10,  16,  -4,  9,  -14,  -10,  10,  11,  13,  21,  31,  -2,  31,  38,  16,  33 ]
-//[5, 8, 6, 3, 4]  =>  [3, 8, 6, 5, 4]
+digitize(35231);

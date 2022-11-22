@@ -1056,9 +1056,26 @@ shuffleIt([1, 2, 3, 4, 5], [1, 2], [3, 4]); */
 
 // //[5, 8, 6, 3, 4]  =>  [3, 8, 6, 5, 4]
 
-//kyu 8 Convert number to reversed array of digits
-function digitize(n) {
-  console.log(n.toString().split("").map(Number).reverse());
+// //kyu 8 Convert number to reversed array of digits
+// function digitize(n) {
+//   console.log(n.toString().split("").map(Number).reverse());
+// }
+
+// digitize(35231);
+
+//kyu 7 Find Count of the Most Frequent Item in an Array
+
+function mostFrequentItemCount(collection) {
+  let counter = {};
+
+  if (!collection.length) {
+    return 0;
+  }
+
+  collection.forEach((num) =>
+    counter[num] ? counter[num]++ : (counter[num] = 1)
+  );
+  console.log(Math.max(...Object.values(counter)));
 }
 
-digitize(35231);
+mostFrequentItemCount([3, -1, -1, -1, 2, 3, -1, 3, -1, 2, 4, 9, 3]);

@@ -1063,19 +1063,27 @@ shuffleIt([1, 2, 3, 4, 5], [1, 2], [3, 4]); */
 
 // digitize(35231);
 
-//kyu 7 Find Count of the Most Frequent Item in an Array
+// //kyu 7 Find Count of the Most Frequent Item in an Array
 
-function mostFrequentItemCount(collection) {
-  let counter = {};
+// function mostFrequentItemCount(collection) {
+//   let counter = {};
 
-  if (!collection.length) {
-    return 0;
-  }
+//   if (!collection.length) {
+//     return 0;
+//   }
 
-  collection.forEach((num) =>
-    counter[num] ? counter[num]++ : (counter[num] = 1)
-  );
-  console.log(Math.max(...Object.values(counter)));
+//   collection.forEach((num) =>
+//     counter[num] ? counter[num]++ : (counter[num] = 1)
+//   );
+//   console.log(Math.max(...Object.values(counter)));
+// }
+
+// mostFrequentItemCount([3, -1, -1, -1, 2, 3, -1, 3, -1, 2, 4, 9, 3]);
+
+//kyu 7 How many arguments
+// Create a function called args_count that returns the number of arguments provided
+function args_count(...args) {
+  console.log(args.length);
 }
 
-mostFrequentItemCount([3, -1, -1, -1, 2, 3, -1, 3, -1, 2, 4, 9, 3]);
+args_count(1, 2, 3);

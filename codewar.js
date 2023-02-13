@@ -1080,10 +1080,34 @@ shuffleIt([1, 2, 3, 4, 5], [1, 2], [3, 4]); */
 
 // mostFrequentItemCount([3, -1, -1, -1, 2, 3, -1, 3, -1, 2, 4, 9, 3]);
 
-//kyu 7 How many arguments
+/* //kyu 7 How many arguments
 // Create a function called args_count that returns the number of arguments provided
 function args_count(...args) {
   console.log(args.length);
 }
 
 args_count(1, 2, 3);
+ */
+
+//kyu 7 cats and shelves
+//Find the minimum number of jumps to go from start to finish
+function solution(start, finish) {
+  let jumps = 0;
+  // if (start === finish) {
+  //   return 0;
+  // }
+
+  // while (start < finish) {
+  //   jumps += 1;
+  //   if (finish >= start + 3) {
+  //     start += 3;
+  //   } else {
+  //     start += 1;
+  //   }
+  // }
+  // return jumps;
+
+  console.log(Math.floor((finish - start) / 3) + ((finish - start) % 3));
+}
+
+solution(387, 815); //144

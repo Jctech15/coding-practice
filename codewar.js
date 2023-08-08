@@ -1089,7 +1089,7 @@ function args_count(...args) {
 args_count(1, 2, 3);
  */
 
-//kyu 7 cats and shelves
+/* //kyu 7 cats and shelves
 //Find the minimum number of jumps to go from start to finish
 function solution(start, finish) {
   let jumps = 0;
@@ -1111,3 +1111,74 @@ function solution(start, finish) {
 }
 
 solution(387, 815); //144
+ */
+
+/* //kyu 8 reversed string
+function solution(str) {
+  let newStr = "";
+
+  for (let i = str.length - 1; i >= 0; i--) {
+    newStr += str[i];
+  }
+  console.log(newStr);
+
+  // str = str.split("");
+  // let newStr = "";
+  // str.forEach((letter) => (newStr = letter + newStr));
+
+  // console.log(newStr);
+
+  // console.log(str.split("").reverse().join(""));
+}
+
+solution("world");
+ */
+
+//kyu 7 Is this a triangle?
+//Implement a function that accepts 3 integer values a, b, c. The function should return true if a triangle can be built with the sides of given length and false in any other case.(In this case, all triangles must have surface greater than 0 to be accepted).
+
+function isTriangle(a, b, c) {
+  // if (a <= 0 || b <= 0 || c <= 0) {
+  //   return false;
+  // }
+
+  return a + b > c && a + c > b && c + b > a ? true : false;
+
+  // if (c + b > a && a + c > b && c + b > a) {
+  //   return true;
+  // } else {
+  //   return false;
+  // }
+
+  // console.log(c + b > a);
+  // switch (true) {
+  //   case a + b > c:
+  //     return true;
+  //     break;
+  //   case a + c > b:
+  //     return true;
+  //     break;
+  //   case c + b > a:
+  //     return true;
+  //     break;
+  //   default:
+  //     return false;
+  // }
+}
+
+isTriangle(7, 2, 2); //true (7,2,2) false
+
+/* //kyu 6 Detect Pangram
+
+//A pangram is a sentence that contains every single letter of the alphabe`t at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant).Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.
+
+function isPangram(string) {
+  //...
+}
+
+isPangram("The quick brown fox jumps over the lazy dog");
+//"The quick brown fox jumps over the lazy dog."; return true
+//"This is not a pangram." return false
+
+
+ */

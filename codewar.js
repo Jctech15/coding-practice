@@ -1149,21 +1149,6 @@ function isTriangle(a, b, c) {
   // } else {
   //   return false;
   // }
-
-  // console.log(c + b > a);
-  // switch (true) {
-  //   case a + b > c:
-  //     return true;
-  //     break;
-  //   case a + c > b:
-  //     return true;
-  //     break;
-  //   case c + b > a:
-  //     return true;
-  //     break;
-  //   default:
-  //     return false;
-  // }
 }
 
 isTriangle(7, 2, 2); //true (7,2,2) false
